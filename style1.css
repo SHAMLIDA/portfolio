@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Playfair Display", serif;
+
+}
+#container{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
+/* .logo{
+    width: 300px;
+    height: 300px;
+} */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+.list-items{
+    display: inline;
+    margin: 0px  20px 20px;
+}
+.links{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+}
+.home-content{
+    margin: 13% 0% 0% 8%;
+}
+#uname{
+    font-size: 40px;
+    margin-bottom: 18px;    
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+#lname{
+    font-size: 40px;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    color: blueviolet;
+}
+#user-details{
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+.dwnld{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+     display: inline-block; 
+    border-radius: 5px;
+}
+/* hover link doub */
+.links:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+.home-images{
+    width: 45%;
+    height: 80%;
+    position: absolute ;
+    bottom: 0%;
+    right: 40px;
+}
+.group1{
+    
+    height:100%;
+    position: absolute; 
+    bottom:0px;
+    left: 50%; 
+    /* animation  */
+    transform: translateX(-50%);
+    transition:bottom 2s, left 1s;
+
+}
+.home-images:hover #shape{
+    bottom: 40px;
+
+}
+.home-images:hover #girl{
+    left: 45%;
+}
+#about{
+    margin: 15% 8% 0% 8%;
+}
+
+.section-head{
+    text-align: center;
+}
+.main-head{
+    font-size: 40px;
+    font-family:"Edu AU VIC WA NT Hand", cursive;
+    
+}
+.sub-head{
+    font-size: 20px;
+    color: blue;
+    font-family:"Edu AU VIC WA NT Hand", cursive;
+}
+.about-content{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+#about-image>img{
+    width: 300px;
+}
+#details{
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 50px;
+}
+.information{
+    margin-top: 20px;
+}
+.info-box{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.info-box>span{
+    margin-left: 20px;
+}
+#skills{
+    margin: 8% 8% 0% 8%;
+}
+.myskill{
+    width:100%;
+    /* margin-left: 20px; */
+    
+}
+.skill-content{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    /* grid-template- columns: 1fr 1fr; */
+    gap: 2rem;
+    margin-top: 20px;
+    align-items: center;
+}
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0px;
+    position: relative;
+}
+.bar-head, .bar-head{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 0px;
+}
+.html-bar{
+    width: 93%;
+    background-color: rgb(255, 0, 0);
+}
+.html-bar1{
+    width: 90%;
+    background-color: rgb(255, 0, 0);
+}
+.html-bar2{
+    width: 99%;
+    background-color: rgb(255, 0, 0);
+}
+.html-bar3{
+    width: 95%;
+    background-color:  rgb(255, 0, 0);
+}
+.html-bar4{
+    width: 80%;
+    background-color: rgb(255, 0, 0);
+}
+.contact{
+    margin: 8%;
+}
+.icon-collection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    
+    
+}
+.icon{
+    
+   
+    display: flex;
+    /* border: 1px solid; */
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+    background-color: rgb(249, 166, 11);
+
+    
+    /* background-image: linear-gradient(rgb(240, 240, 10)); */
+     /* padding: 20px; */
+     /* margin-left: 25px;  */
+}
+.icon :hover{
+    background-image: linear-gradient( to bottom right, white,yellow,orange,red,blue);
+    animation:rotates 2s;
+
+
+}
+.brand{
+    color: black;
+    font-size: 26px;
+}
+.brand:hover{
+ color: white;
+}
+@keyframes rotates{
+    0%{
+        transform: rotate(30deg);    
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+  
+}
+#copyright{
+    text-align: center;
+    font-weight: bolder;
+
+}
+.up-arrow{
+    float: right;
+    margin: -40px 30px 30px 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: azure;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px;
+}
+
+
+
+
